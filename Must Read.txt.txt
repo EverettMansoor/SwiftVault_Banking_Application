@@ -1,0 +1,16 @@
+we used "Springboot(java framework)" for Backend and "React(javascript framework)" for Frontend.
+
+Classes path:
+\SwiftVault\backend\src\main\java\com\example\demo
+
+classes we have in a project:
+1. User class
+2. Accounts class
+   2.1 saving account extends Accounts class
+   2.2 current account extends Accounts class
+3. Transaction Class
+   3.1 DepositeTransaction extends extends Transaction Class
+   3.2 WithdrawTransaction extends extends Transaction Class
+4. All Transaction Class
+                                      
+                                                   --------------------------------------------------------------------------------

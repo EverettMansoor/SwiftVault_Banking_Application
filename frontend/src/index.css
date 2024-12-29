@@ -1,0 +1,27 @@
+:root {
+  --primary-color: #0984e3;
+  --secondary-color: #74b9ff;
+  --background-color: #f8f9fc;
+  --text-color: #636e72;
+  --header-bg-color: #ffffff;
+  --section-bg-color: #ffffff;
+  --card-bg-color: #ffffff;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+  --highlight-color: #dfe6e9;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.icons_large{
+  font-size: 3rem;
+  color: black;
+}
+.icons_normal{
+  font-size: 1.4rem;
+  color : var(--text-color)
+}

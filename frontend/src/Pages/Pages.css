@@ -1,0 +1,338 @@
+
+.dashboard-container {
+  background-color: rgba(0, 0, 0, 0.01);
+  max-width: 1200px;
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  position: relative;
+}
+
+.section {
+  background: var(--section-bg-color);
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 5px 15px var(--shadow-color);
+  transition: transform 0.3s;
+}
+
+.section:hover {
+  transform: scale(1.02);
+}
+
+.section h2 {
+  font-size: 1.6rem;
+  color: var(--primary-color);
+  margin-bottom: 15px;
+}
+
+.balance-section {
+  background: linear-gradient(
+    135deg,
+    var(--primary-color),
+    var(--secondary-color)
+  );
+  color: white;
+  padding: 30px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.balance-amount {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.interest-rate {
+  font-size: 1.1rem;
+}
+
+.account-type-section {
+  text-align: center;
+}
+
+.account-type-section p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.transactions-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+
+.transactions-table th,
+.transactions-table td {
+  text-align: left;
+  padding: 12px 15px;
+  border-bottom: 1px solid var(--shadow-color);
+  vertical-align: middle;
+  transition: background-color 0.3s ease, transform 0.2s ease, color 0.2s ease;
+}
+
+.transactions-table th {
+  background-color: var(--highlight-color);
+  color: var(--text-color);
+  font-weight: bold;
+}
+
+.transactions-table tr {
+  transition: background-color 0.3s ease;
+}
+
+.transactions-table tr:hover {
+  background-color: var(--highlight-color);
+  cursor: pointer;
+}
+
+.transactions-table td:hover {
+  background-color: var(--highlight-color);
+  color: var(--hover-text-color); 
+  transform: scale(1.05); 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+.transactions-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.transactions-table tr:nth-child(odd) {
+  background-color: #fff;
+}
+
+.features-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+.allTrnsBtn{
+  min-width: 3rem;
+  padding: .5rem .6rem;
+  background-color: var(--primary-color);
+  color: white;
+  border: 1px solid var(--primary-color);
+  border-radius: .4rem;
+  cursor: pointer;
+}
+.allTrnsBtn:hover{
+  opacity: 0.7;
+}
+
+.feature-card {
+  background: var(--card-bg-color);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 5px 15px var(--shadow-color);
+  text-align: center;
+  transition: transform 0.3s;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.feature-card:hover {
+  transform: translateY(-10px);
+  border: 1px solid var(--primary-color);
+}
+
+.feature-card img {
+  width: 5rem;
+  margin-bottom: 10px;
+}
+
+.feature-card h3 {
+  font-size: 1.2rem;
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+.feature-card p {
+  font-size: 0.9rem;
+  color: var(--text-color);
+}
+
+/* Account */
+.header {
+  background: var(--header-bg-color);
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px var(--shadow-color);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header .logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.user-info img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--secondary-color);
+}
+
+.user-info span {
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.account-page-container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.user-profile-section {
+  display: flex;
+  gap: 20px;
+  background: var(--section-bg-color);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px var(--shadow-color);
+}
+
+.user-profile-section img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid var(--primary-color);
+}
+
+.user-details {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.user-details h2 {
+  font-size: 1.6rem;
+  color: var(--primary-color);
+}
+
+.user-details p {
+  font-size: 1rem;
+  color: var(--text-color);
+}
+
+.personal-details-section {
+  background: linear-gradient(
+    135deg,
+    var(--primary-color),
+    var(--secondary-color)
+  );
+  color: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px var(--shadow-color);
+}
+
+.personal-details-section h3 {
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+}
+
+.personal-details-section p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.account-info-section {
+  background: var(--section-bg-color);
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px var(--shadow-color);
+}
+
+.account-info-section h3 {
+  font-size: 1.4rem;
+  color: var(--primary-color);
+  margin-bottom: 15px;
+}
+
+.account-info-section p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+
+/* Create Bank Account */
+.createAccPage{
+  background-color: var(--section-bg-color);
+  padding: 4rem 3rem 3.5rem 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  border-radius: .8rem;
+}
+.caText{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.caText h1{
+  color: var(--primary-color);
+}
+.caCards{
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+.caCards .caCard{
+  width: 28rem;
+  background-color: var(--shadow-color);
+  padding: 2rem 1.5rem 1.7rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: .5rem;
+  gap: .5rem;
+}
+.caCard h3{
+  color: var(--primary-color);
+  font-size: 1.4rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding-bottom: 1rem;
+}
+.caCardBody p{
+  color: var(--text-color);
+  font-size: .95rem;
+}
+.accImgs{
+  width: 12rem;
+}
+.caCardBtn{
+  margin-top: 1rem;
+  min-width: 7rem;
+  background-color: var(--primary-color);
+  color: white;
+  padding: .4rem .6rem;
+  border-radius: .3rem;
+  border: 1px solid var(--primary-color);
+  cursor: pointer;
+  transition: .5s all;
+}
+.caCardBtn:hover{
+  opacity: 0.7;
+}
+

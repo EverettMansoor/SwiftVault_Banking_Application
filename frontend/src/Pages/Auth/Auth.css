@@ -1,0 +1,118 @@
+
+.form-container {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px var(--form-shadow-color);
+  padding: 20px 30px;
+  width: 350px;
+}
+
+.form-title {
+  text-align: center;
+  font-size: 1.5rem;
+  color: var(--text-color);
+  margin-bottom: 20px;
+  margin-top: 2rem;
+}
+
+#registrationForm{
+  margin: 1rem 0;
+}
+
+.form-group {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  outline: none;
+  background: transparent;
+  transition: border-color 0.3s;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  border-color: var(--primary-color);
+}
+
+.form-group label {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 1rem;
+  color: var(--text-color);
+  transition: 0.3s ease;
+  pointer-events: none;
+}
+
+.form-group input:focus + label,
+.form-group select:focus + label,
+.form-group input:not(:placeholder-shown) + label,
+.form-group select:not(:placeholder-shown) + label {
+  top: -15px;
+  left: 5px;
+  font-size: 0.8rem;
+  color: var(--primary-color);
+}
+
+.gender-label {
+  font-size: 1rem;
+  color: var(--text-color);
+  margin-bottom: 10px;
+  display: block;
+}
+
+.gender-options {
+  display: flex;
+  gap: 15px;
+  margin-top: 5px;
+}
+
+.gender-options label {
+  font-size: 1rem;
+  color: var(--text-color);
+}
+
+.gender-options input {
+  margin-right: 5px;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 10px;
+  background: var(--primary-color);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.submit-btn:hover {
+  background: var(--secondary-color);
+}
+
+.form-footer {
+  text-align: center;
+  margin-top: 20px;
+  color: var(--text-color);
+  font-size: 0.9rem;
+}
+
+.form-footer a {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.form-footer a:hover {
+  color: var(--secondary-color);
+}
